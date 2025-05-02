@@ -1,64 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Pranav Doma</title>
-    <link rel="stylesheet" href="../assets/css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Pranav Doma</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="/" class="nav-brand">Pranav Doma</a>
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="experience.html">Experience</a>
-                <a href="projects.html">Projects</a>
-                <a href="publications.html">Publications</a>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">Pranav Doma</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+      </div>
+    </div>
+  </nav>
 
-    <main class="main-content">
-        <div class="section">
-            <h1>Projects</h1>
-            
-            <div class="card">
-                <h3>RL-Based Quadruped and Humanoid Control</h3>
-                <p>A deep dive into reinforcement learning for robotic control systems.</p>
-                <ul>
-                    <li>Implemented PPO with MJX/Brax for physics simulation</li>
-                    <li>Developed robust checkpointing and training pipelines</li>
-                    <li>Created evaluation frameworks for testing control policies</li>
-                    <li>Integrated with real-world robotic platforms</li>
-                </ul>
-                <p><a href="https://github.com/pranavreddy23/rl-robotics" target="_blank">View Project →</a></p>
-            </div>
+  <main class="main-content">
+    <div class="section">
+      <h1>Projects</h1>
 
-            <div class="card">
-                <h3>CUDA GPU Programming Portfolio</h3>
-                <p>High-performance computing implementations focusing on GPU optimization.</p>
-                <ul>
-                    <li>Custom CUDA kernels for matrix operations</li>
-                    <li>Optimized convolution implementations</li>
-                    <li>Image processing pipeline with GPU acceleration</li>
-                    <li>Performance comparison with AVX2-optimized CPU implementations</li>
-                </ul>
-                <p><a href="https://github.com/pranavreddy23/cuda-portfolio" target="_blank">View Project →</a></p>
-            </div>
+      <!-- RL-Based Quadruped -->
+      <div class="card">
+        <h3>RL-Based Quadruped and Humanoid Control</h3>
+        <p>
+          Developed PPO-based reinforcement learning pipelines using MJX and Brax for learning locomotion in quadrupeds and humanoids. Built robust checkpointing, parallelized training, and evaluation tools to analyze stability and performance.
+        </p>
+        <!-- Replace this with your GIF or demo image -->
+        <img class="project-image" src="../assets/images/projects/rl-control.gif" alt="RL Control Demo" />
+        <ul>
+          <li>Built PPO pipelines in JAX + Brax with checkpointing and evaluation</li>
+          <li>Integrated with MJX physics simulation</li>
+          <li>Generated video/HTML visualizations for policy testing</li>
+        </ul>
+        <p><a href="https://github.com/pranavreddy23/rl-robotics" target="_blank">View Project →</a></p>
+      </div>
 
-            <div class="card">
-                <h3>Visual Navigation & 3D Mapping</h3>
-                <p>Comprehensive SLAM implementation for autonomous navigation.</p>
-                <ul>
-                    <li>Monocular feature-based navigation system</li>
-                    <li>IMU data integration for improved accuracy</li>
-                    <li>360° LiDAR mapping integration</li>
-                    <li>Real-world testing on TurtleBot3 platform</li>
-                </ul>
-                <p><a href="https://github.com/pranavreddy23/visual-nav" target="_blank">View Project →</a></p>
-            </div>
-        </div>
-    </main>
+      <!-- CUDA Portfolio -->
+      <div class="card">
+        <h3>CUDA GPU Programming Portfolio</h3>
+        <p>
+          A suite of CUDA-accelerated programs built for high-performance computing experiments. Implemented low-level GPU kernels and benchmarked performance against SIMD-optimized CPU versions (AVX2/SSE).
+        </p>
+        <img class="project-image" src="../assets/images/projects/cuda-performance.png" alt="CUDA Results" />
+        <ul>
+          <li>Custom CUDA kernels for matrix ops, softmax, image filters</li>
+          <li>Memory coalescing, shared memory tuning, and kernel optimization</li>
+          <li>Achieved up to 73× speedup over CPU baseline</li>
+        </ul>
+        <p><a href="https://github.com/pranavreddy23/cuda-portfolio" target="_blank">View Project →</a></p>
+      </div>
+
+      <!-- Visual Navigation -->
+      <div class="card">
+        <h3>Visual Navigation & 3D Mapping</h3>
+        <p>
+          Developed a monocular visual navigation game with SLAM-like behavior. Integrated camera and IMU data for real-world TurtleBot3 mapping and tested with multiple sensors including 360° camera and LiDAR.
+        </p>
+        <img class="project-image" src="../assets/images/projects/visual-nav.gif" alt="Nav Game Demo" />
+        <ul>
+          <li>Feature-based navigation using SIFT and OpenCV</li>
+          <li>SLAM-based mapping with IMU + LiDAR integration</li>
+          <li>Adapted for TurtleBot3 with ROS-based deployment</li>
+        </ul>
+        <p><a href="#" target="_blank">View Project →</a> <!-- Add GitHub or video link here --></p>
+      </div>
+
+      <!-- RISC-V Co-Design -->
+      <div class="card">
+        <h3>Hardware-Software Co-Design for RISC-V</h3>
+        <p>
+          Built a 5-stage pipelined, cycle-accurate RISC-V simulator in Python. Designed custom RISC-V instructions for Transformer acceleration, and achieved 8× speedup through hardware-software optimization.
+        </p>
+        <img class="project-image" src="../assets/images/projects/riscv-sim.png" alt="RISC-V Demo" />
+        <ul>
+          <li>Implemented hazard resolution using forwarding/stalling</li>
+          <li>Added MAC, softmax, and saturating vector ops</li>
+          <li>Accelerated Transformer inference in simulation</li>
+        </ul>
+        <p><a href="#" target="_blank">View Project →</a> <!-- Add GitHub or video link here --></p>
+      </div>
+
+      <!-- Stock Forecasting -->
+      <div class="card">
+        <h3>Stock Price Forecasting with Sentiment Analysis</h3>
+        <p>
+          Designed a forecasting model combining news sentiment and technical indicators. Used DL models like Transformer, DP-LSTM, and CNN-LSTM, outperforming traditional statistical methods on real-world data.
+        </p>
+        <img class="project-image" src="../assets/images/projects/stock-forecasting.png" alt="Stock Forecasting" />
+        <ul>
+          <li>Processed 6,000 news articles with sentiment analysis</li>
+          <li>Integrated 15+ technical indicators with price data</li>
+          <li>Ran models on NYU’s HPC (Slurm + Singularity)</li>
+        </ul>
+        <p><a href="#" target="_blank">View Project →</a> <!-- Add GitHub or video link here --></p>
+      </div>
+
+    </div>
+  </main>
 </body>
 </html>
