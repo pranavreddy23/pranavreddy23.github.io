@@ -20,9 +20,9 @@
     </nav>
 
     <main class="main-content">
-        <div class="section">
+        <div class="hero">
             <div class="profile-container">
-                <img class="profile-image" src="assets/images/profile/profile.jpg" alt="Pranav Doma">
+                <img src="assets/images/profile/profile.jpg" alt="Pranav Doma" class="profile-image">
                 <div class="profile-content">
                     <h1>Hi, I'm Pranav</h1>
                     <p>
@@ -52,14 +52,57 @@
                     <div class="contact-info">
                         <h3>Contact</h3>
                         <p>
-                            📧 <a href="mailto:pd2365@nyu.edu">pd2365@nyu.edu</a><br>
-                            🐙 <a href="https://github.com/pranavreddy23">GitHub</a><br>
-                            💼 <a href="https://linkedin.com/in/pranavr0323">LinkedIn</a>
-                        </p>
+                            📧                         <a href="mailto:pd2365@nyu.edu">pd2365@nyu.edu</a><br>
+                            🐙                         <a href="https://github.com/pranavreddy23">GitHub</a><br>
+                            💼                         <a href="https://linkedin.com/in/pranavr0323">LinkedIn</a>
+</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <style>
+            .hero {
+                background: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+                padding: 60px 0;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: radial-gradient(circle at 50% 50%, var(--primary-color) 0%, transparent 50%);
+                opacity: 0.1;
+                z-index: 0;
+            }
+
+            .profile-container {
+                position: relative;
+                z-index: 1;
+            }
+
+            .lead {
+                font-size: 1.5rem;
+                color: var(--primary-color);
+                margin-bottom: 1.5rem;
+            }
+
+            .social-links {
+                display: flex;
+                gap: 15px;
+                margin-top: 30px;
+            }
+
+            .social-links .project-link {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        </style>
     </main>
 </body>
 </html>
