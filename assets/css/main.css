@@ -115,6 +115,91 @@ body {
     float: left;
 }
 
+/* Project specific styling */
+.project-card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-header {
+    margin-bottom: 20px;
+}
+
+.project-header h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+}
+
+.project-content {
+    max-width: 100%;
+}
+
+.project-description {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.project-media {
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.project-media img, 
+.project-media video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-details {
+    margin: 20px 0;
+}
+
+.project-details ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.project-details li {
+    position: relative;
+    padding-left: 1.5em;
+    margin: 8px 0;
+}
+
+.project-details li:before {
+    content: "•";
+    position: absolute;
+    left: 0.5em;
+    color: var(--primary-color);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.project-link:hover {
+    background: #003b5c;
+    text-decoration: none;
+}
+
 /* Profile section */
 .profile-container {
     display: flex;
