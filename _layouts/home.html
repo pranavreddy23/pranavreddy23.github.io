@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="hero">
+    <div class="container">
+        <div class="profile-section">
+            {% if page.profile_image %}
+            <img src="{{ page.profile_image | relative_url }}" alt="{{ site.title }}" class="profile-image">
+            {% endif %}
+            <div class="profile-content">
+                {{ content }}
+
+                {% if page.show_contact %}
+                <div class="contact-info">
+                    <p>
+                        <a href="mailto:{{ site.email }}">📧 {{ site.email }}</a>
+                        <a href="https://github.com/{{ site.social_links.github }}">🐙 GitHub</a>
+                        <a href="https://linkedin.com/in/{{ site.social_links.linkedin }}">💼 LinkedIn</a>
+                    </p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

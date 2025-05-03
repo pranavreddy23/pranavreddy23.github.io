@@ -1,108 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pranav Doma</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="/" class="nav-brand">Pranav Doma</a>
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="pages/experience.html">Experience</a>
-                <a href="pages/projects.html">Projects</a>
-                <a href="pages/publications.html">Publications</a>
-            </div>
-        </div>
-    </nav>
+---
+layout: home
+title: Home
+profile_image: assets/images/profile/profile.jpg
+show_contact: true
+---
 
-    <main class="main-content">
-        <div class="hero">
-            <div class="profile-container">
-                <img src="assets/images/profile/profile.jpg" alt="Pranav Doma" class="profile-image">
-                <div class="profile-content">
-                    <h1>Hi, I'm Pranav </h1>
-                    <p>
-                        I’m interested in systems that blend intelligence and performance, whether it's robots playing in simulated worlds or algorithms crunching through data at GPU scale.  
-                        I’ve always been curious to learn what happens under the hood.  
-                        I love working on exciting, hands-on problems, and I’m currently an open-source contributor at the <strong>Autoware Foundation</strong>, supporting autonomy stacks for self-driving systems.
-                      </p>
-                    
-                      <p>
-                        I completed my Master’s in Computer Engineering at <strong>New York University</strong>, where I have worked on robotics and compute systems.
-                        My undergraduate degree is in Electrical Engineering from S.V. National Institute of Technology, Surat, where I laid the foundation for my engineering curiosity.  
-                        
-                      </p>
-                    
-                      <p>
-                        Professionally, I’ve worked on real-time sensor and embedded systems at <strong>MultiCoreWare</strong>, and built system-level infrastructure for robotics deployments at <strong>TRC Robotics</strong>.  
-                        Right now, I'm actively working on learning projects in <strong>CUDA programming</strong> and <strong>MJX/Brax-based reinforcement learning</strong>, which means I’m perpetually GPU poor and always on the hunt for a spare NVIDIA core
-                    
-                      <p>
-                        Outside of tech, I live for sports. There are very few games I haven't tried.  
-                        Cricket, tennis, volleyball ,you name it. I’m always ready for a match, and fortunate to pick things up quickly.  
-                        Martin Scorsese movies and pizza practically defined my teenage years.You’ll also catch me deep in a movie, reading up on geopolitics, deep tech, and anything that sparks curiosity.
-                      </p>
-                    <p>
-                        If you want to chat about robotics, tech, or just want to share a pizza recommendation, feel free to reach out!
-                    
-                    <div class="contact-info">
-                        <h3>Contact</h3>
-                        <p>
-                            📧                         <a href="mailto:pd2365@nyu.edu">pd2365@nyu.edu</a><br>
-                            🐙                         <a href="https://github.com/pranavreddy23">GitHub</a><br>
-                            💼                         <a href="https://linkedin.com/in/pranavr0323">LinkedIn</a>
+<h1>Hi, I'm Pranav</h1>
+<p>
+    I'm interested in systems that blend intelligence and performance, whether it's robots playing in simulated worlds or algorithms crunching through data at GPU scale.  
+    I've always been curious to learn what happens under the hood.  
+    I love working on exciting, hands-on problems, and I'm currently an open-source contributor at the <strong>Autoware Foundation</strong>, supporting autonomy stacks for self-driving systems.
 </p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <style>
-            .hero {
-                background: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
-                padding: 60px 0;
-                position: relative;
-                overflow: hidden;
-            }
-            
-            .hero::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: radial-gradient(circle at 50% 50%, var(--primary-color) 0%, transparent 50%);
-                opacity: 0.1;
-                z-index: 0;
-            }
+<p>
+    I completed my Master's in Computer Engineering at <strong>New York University</strong>, where I have worked on robotics and compute systems.
+    My undergraduate degree is in Electrical Engineering from S.V. National Institute of Technology, Surat, where I laid the foundation for my engineering curiosity.  
+</p>
 
-            .profile-container {
-                position: relative;
-                z-index: 1;
-            }
+<p>
+    Professionally, I've worked on real-time sensor and embedded systems at <strong>MultiCoreWare</strong>, and built system-level infrastructure for robotics deployments at <strong>TRC Robotics</strong>.  
+    Right now, I'm actively working on learning projects in <strong>CUDA programming</strong> and <strong>MJX/Brax-based reinforcement learning</strong>, which means I'm perpetually GPU poor and always on the hunt for a spare NVIDIA core
+</p>
 
-            .lead {
-                font-size: 1.5rem;
-                color: var(--primary-color);
-                margin-bottom: 1.5rem;
-            }
+<p>
+    Outside of tech, I live for sports. There are very few games I haven't tried.  
+    Cricket, tennis, volleyball, you name it. I'm always ready for a match, and fortunate to pick things up quickly.  
+    Martin Scorsese movies and pizza practically defined my teenage years. You'll also catch me deep in a movie, reading up on geopolitics, deep tech, and anything that sparks curiosity.
+</p>
 
-            .social-links {
-                display: flex;
-                gap: 15px;
-                margin-top: 30px;
-            }
-
-            .social-links .project-link {
-                padding: 8px 16px;
-                font-size: 0.9rem;
-            }
-        </style>
-    </main>
-</body>
-</html>
+<p>
+    If you want to chat about robotics, tech, or just want to share a pizza recommendation, feel free to reach out!
+</p>
