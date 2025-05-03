@@ -1,0 +1,29 @@
+// Colors
+// Primary Color Palette (Light to Dark)
+$color-lightest: #B39BB5;  // Lighter mauve
+$color-light: #997a8d;     // Mauve
+$color-medium: #6A6A98;    // Dusty blue
+$color-dark: #514B7C;      // Deep purple-blue
+$color-darkest: #654762;   // Deep mauve
+
+// Main Theme Colors
+$primary-color: $color-medium;     // Main interactive elements
+$primary-hover: $color-lightest;   // Hover states
+$primary-active: $color-light;     // Active/pressed states
+$accent-color: $color-dark;        // Secondary emphasis
+$subtle-accent: $color-darkest;    // Subtle decorative elements
+
+// Base Colors
+$background-dark: #121212;
+$background-card: #1e1e1e;
+$text-primary: #ffffff;
+$text-secondary: #b3b3b3;
+
+// Typography
+$font-stack: 'Segoe UI', system-ui, -apple-system, sans-serif;
+$line-height: 1.6;
+
+// Layout
+$nav-height: 60px;
+$max-width: 1400px;
+$border-radius: 12px;

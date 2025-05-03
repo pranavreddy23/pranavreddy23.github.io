@@ -1,0 +1,35 @@
+title: Pranav Doma
+description: Robotics, Real-time Systems, and High-Performance Computing
+url: https://pranavreddy23.github.io
+author: Pranav Doma
+email: pd2365@nyu.edu
+profile_image: /assets/images/profile/profile.jpg
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude: [README.md]
+
+# Theme settings
+theme_settings:
+  # Colors
+  colors:
+    primary: "#00a8e8"
+    background_dark: "#121212"
+    background_card: "#1e1e1e"
+    text_primary: "#ffffff"
+    text_secondary: "#b3b3b3"
+
+# Social links
+social_links:
+  github: pranavreddy23
+  linkedin: pranavr0323
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/

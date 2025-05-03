@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: $font-stack;
+    line-height: $line-height;
+    color: $text-primary;
+    background: $background-dark;
+    min-height: 100vh;
+    padding: 0;
+}
+
+a {
+    color: $color-medium;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+    &:hover {
+        color: $color-lightest;
+    }
+    
+    &:active {
+        color: $color-light;
+    }
+}
+
+::selection {
+    background: $color-darkest;
+    color: $text-primary;
+}
+
+.main-content {
+    margin-top: $nav-height;
+    width: 100%;
+    min-height: calc(100vh - #{$nav-height});
+}
+
+.section {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero {
+    background: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at 50% 50%, $color-medium 0%, transparent 50%);
+        opacity: 0.1;
+        z-index: 0;
+    }
+}
+
+.gradient-bg {
+    background: linear-gradient(45deg, $color-darkest, $background-dark);
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at 50% 50%, $color-medium 0%, transparent 70%);
+        opacity: 0.1;
+        z-index: 0;
+    }
+}
+
+.section-header {
+    border-bottom: 2px solid $color-medium;
+    color: $color-medium;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 40px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.profile-image {
+    width: 280px;
+    border-radius: $border-radius;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.profile-content {
+    flex: 1;
+    
+    h1 {
+        text-align: left;
+        margin-top: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-image {
+        width: 200px;
+        margin: 0 auto;
+    }
+    
+    .profile-content h1 {
+        text-align: center;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+}

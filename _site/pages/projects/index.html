@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Pranav Doma</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-brand">Pranav Doma</a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/pages/experience">Experience</a>
+            <a href="/pages/projects">Projects</a>
+            <a href="/pages/publications">Publications</a>
+        </div>
+    </div>
+</nav>
+    
+    <main class="main-content">
+        <div class="section">
+    <header class="section-header">
+        <h1>Projects</h1>
+        
+    </header>
+    <!-- RL-Based Quadruped -->
+<div class="project-card">
+    <h3>RL-Based Quadruped and Humanoid Control</h3>
+    <div class="project-content">
+        <div class="project-description">
+            Developed PPO-based reinforcement learning pipelines using MJX and Brax for learning locomotion in quadrupeds and humanoids. Built robust checkpointing, parallelized training, and evaluation tools to analyze stability and performance.
+        </div>
+        <div class="project-media">
+            <img src="/assets/images/projects/quadruped.gif" alt="Quadruped Demo">
+            <img src="/assets/images/projects/humanoid.gif" alt="Humanoid Demo">
+        </div>
+        <div class="project-details">
+            <ul>
+                <li>Built PPO pipelines in JAX + Brax with checkpointing and evaluation</li>
+                <li>Integrated with MJX physics simulation</li>
+                <li>Generated video/HTML visualizations for policy testing</li>
+            </ul>
+        </div>
+        <a href="https://github.com/pranavreddy23/MJX_RL.git" class="project-link">View Project →</a>
+    </div>
+</div>
+
+<!-- CUDA Portfolio -->
+<div class="project-card">
+    <h3>CUDA GPU Programming Portfolio</h3>
+    <div class="project-content">
+        <div class="project-description">
+            A suite of CUDA-accelerated programs built for high-performance computing experiments. Implemented low-level GPU kernels and benchmarked performance against SIMD-optimized CPU versions (AVX2/SSE).
+        </div>
+        <div class="project-media">
+            <img src="/assets/images/projects/cuda.png" alt="One of my first kernels">
+        </div>
+        <div class="project-details">
+            <ul>
+                <li>Custom CUDA kernels for matrix ops, softmax, image filters</li>
+                <li>Memory coalescing, shared memory tuning, and kernel optimization</li>
+                <li>Achieved up to 73× speedup over CPU baseline</li>
+            </ul>
+        </div>
+        <a href="https://github.com/pranavreddy23/cuda-practice" class="project-link">View Project →</a>
+    </div>
+</div>
+
+<!-- Visual Navigation -->
+<div class="project-card">
+    <h3>Visual Navigation & 3D Mapping</h3>
+    <div class="project-content">
+        <div class="project-description">
+            Developed a monocular visual navigation game with SLAM-like behavior. Integrated camera and IMU data for real-world TurtleBot3 mapping and tested with multiple sensors including 360° camera and LiDAR.
+        </div>
+        <div class="project-media">
+            <img src="/assets/images/projects/visual-nav.gif" alt="Navigation Demo">
+        </div>
+        <div class="project-details">
+            <ul>
+                <li>Feature-based navigation using SIFT and OpenCV</li>
+                <li>SLAM-based mapping with IMU + LiDAR integration</li>
+                <li>Adapted for TurtleBot3 with ROS-based deployment</li>
+            </ul>
+        </div>
+        <a href="#" class="project-link">View Project →</a>
+    </div>
+</div>
+
+<!-- RISC-V Co-Design -->
+<div class="project-card">
+    <h3>Hardware-Software Co-Design for RISC-V</h3>
+    <div class="project-content">
+        <div class="project-description">
+            Built a 5-stage pipelined, cycle-accurate RISC-V simulator in Python. Designed custom RISC-V instructions for Transformer acceleration, and achieved 8× speedup through hardware-software optimization.
+        </div>
+        <div class="project-media">
+            <img src="/assets/images/projects/riscv.png" alt="RISC-V Simulator">
+        </div>
+        <div class="project-details">
+            <ul>
+                <li>Implemented hazard resolution using forwarding/stalling</li>
+                <li>Added MAC, softmax, and saturating vector ops</li>
+                <li>Accelerated Transformer inference in simulation</li>
+            </ul>
+        </div>
+        <a href="#" class="project-link">View Project →</a>
+    </div>
+</div>
+
+</div>
+    </main>
+</body>
+</html>
