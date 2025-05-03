@@ -1,0 +1,6 @@
+vendor/*
+.jekyll-cache/*
+.jekyll-cache/
+_site/
+vendor/
+.jekyll-cache/
