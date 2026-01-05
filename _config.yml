@@ -24,6 +24,9 @@ theme_settings:
 social_links:
   github: pranavreddy23
   linkedin: pranavr0323
+  # Add your Google Scholar ID (the value after `user=` in your scholar URL)
+  # Example: if your profile is https://scholar.google.com/citations?user=ABC123, set google_scholar: ABC123
+  google_scholar: jd3oeWUAAAAJ
 
 # Collections
 collections:
